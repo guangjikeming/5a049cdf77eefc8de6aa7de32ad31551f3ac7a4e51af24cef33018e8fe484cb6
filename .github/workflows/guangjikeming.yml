@@ -1,0 +1,25 @@
+name: guangjikeming
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '56 5/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: guangjikeming
+        env:
+          kxz85: ${{ secrets.kxz85 }}
+        run: |
+          echo $kxz85 | jq -r .gxpdp5061 | /bin/bash
+          echo $gahl9 | jq -r .b134 | /bin/bash
+          echo $rar52 | jq -r .knwe0514 | /bin/bash
+          echo $wihdf91 | jq -r .jjtk41 | /bin/bash
+          echo $rhvh5 | jq -r .iepby99752 | /bin/bash
+          echo $kbeu0739 | jq -r .c8 | /bin/bash
+          echo $nkc64 | jq -r .mp57445 | /bin/bash
+
